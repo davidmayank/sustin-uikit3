@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sus-tin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit-icons.min.js"></script>
+</head>
+<body class="uk-container">
+    <header class="uk-header uk-grid uk-margin-small-top">
+        <div class="uk-width-1-4@s">
+            <a href="#" class="brand-logo">
+                <figure class="uk-margin-left uk-margin-remove-bottom"><img src="./images/logo-citizens-fund.png" width="226" height="80"
+                        alt="Active Citizens Fund"></figure>
+            </a>
+        </div>
+        <div class="uk-width-3-4@s">
+            <div class="uk-flex uk-flex-middle uk-flex-right">
+                <div class="uk-margin-large-right">
+                    <nav class="uk-navbar-container">
+                        <ul class="uk-navbar-nav uk-visible@m uk-navbar-right">
+                            <li><a href="#">Despre SUS-TIN</a></li>
+                            <li><a href="#">Despre ARNIS</a></li>
+                            <li><a href="#">Doneaza</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <a href="#my-id" uk-icon="icon:menu" class="uk-hidden@m" uk-toggle></a>
+                    </nav>
+                    <div id="my-id" uk-offcanvas="mode: slide">
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav">
+                                <li><a href="#">Despre SUS-TIN</a></li>
+                                <li><a href="#">Despre ARNIS</a></li>
+                                <li><a href="#">Doneaza</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-inline">
+                        <a class="uk-icon-button uk-margin-left uk-icon uk-search-icon" href="#" uk-search-icon=""
+                            aria-haspopup="true" aria-expanded="false"></a>
+                        <div uk-drop="mode: click">
+                            <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+                                <div class="uk-width-expand uk-first-column">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="Search" autofocus="">
+                                    </form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close uk-icon uk-drop-close" href="#" uk-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <a class="uk-button uk-button-primary" href="#">Cont utilizator</a>
+                </div>    
+            </div>
+        </div>   
+        </div>
+    </header>
+    <section class="uk-section-1">
+        <div class="uk-grid-collapse" uk-grid>
+            <div class="uk-width-1-4@s main-left-section">
+                <figure>
+                    <a href="#">
+                        <img src="./images/logo-sus-tin.png" width="226" height="248" alt="SUS-TIN">
+                    </a>
+                </figure>
+                <div class="uk-clearfix uk-text-center uk-text-small uk-grid-small uk-grid" uk-grid="">
+                    <div class="uk-width-1-2 uk-float-left uk-first-column">
+                        <h5>Proiect derulat de:</h5>                            
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-arnis.png" alt="ARNIS" width="105" height="90">
+                        <div class="grid">
+                            <a href="https://www.facebook.com/asociatiaARNIS/" class="uk-icon-button sus-tin-icon-facebook uk-icon" uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button sus-tin-icon-web uk-icon" uk-icon="world"></a>
+                        </div>
+                        
+                    </div>
+                    <div class="uk-width-1-2 uk-float-right">
+                        <h5>Cu sprijinul:</h5>                            
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-SCJU-Cluj.png" alt="Maternitati partenere" width="128" height="87">
+                    </div>
+                </div>
+                
+            
+            </div>
+            <div class="uk-width-3-4@s">
+                <div class="uk-align-center" style="max-width: 590px;">
+
+                    <p class="uk-heading-line uk-text-center"><span>Bun venit pe pagina de înregistrare</span></p>
+        
+                    <form action="" method="POST" novalidate="novalidate" autocomplete="off" class="uk-form-horizontal register-form">
+                        <input id="csrf_token" name="csrf_token" type="hidden" value="IjVhNWUzOGJhN2VjY2YyNmQ2ZDA2MjExYjY3Y2I3Nzc2NjM2ZTQyODUi.Y5R4yw.AMRbpGXk6NcDO3AkcYV36V_HML4">
+                        
+                        <fieldset class="uk-fieldset ">
+                    
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Nume</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="firstname" maxlength="64" minlength="1" name="firstname" placeholder="..." required="" type="text" value=""></div>
+                                
+                            </div>
+                    
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Prenume</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="lastname" maxlength="64" minlength="1" name="lastname" placeholder="..." required="" type="text" value=""></div>
+                                
+                            </div>    
+                            
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Email</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="email" maxlength="64" minlength="1" name="email" placeholder="..." required="" type="text" value=""></div>
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Oraș</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="city" maxlength="64" minlength="1" name="city" placeholder="..." required="" type="text" value=""></div>
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Județ</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="state" maxlength="64" minlength="1" name="state" placeholder="..." required="" type="text" value=""></div>
+                                
+                            </div>
+            
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-select">Utilizator</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-text-small">Vă rugăm să alegeți tipul de cont pe care vi-l veți face pe platforma SUS-TIN</div>
+                                    <select class="uk-select" id="form-horizontal-select" name="roles">
+                                    
+                                        
+                                            <option value="" disabled="" selected="">Eu sunt ...</option>
+                                        
+                                        <option value="viitor_parinte">Viitor/actual părinte cu bebeluș la termen</option>
+                                    
+                                        
+                                        <option value="parinte_copil_tin">Părinte cu bebeluș în terapie</option>
+                                    
+                                        
+                                        <option value="cadre_medicale">Cadru medical</option>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-select">Clinici partenere</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-text-small">Vă rugăm să alegeți Maternitatea cu care colaborați. Dacă nu se regăseste in lista de mai jos vă rugăm să alegeți "Alta Maternitate"</div>
+                                    <select class="uk-select" id="form-horizontal-select" name="clinics">
+                                    
+                                        
+                                            <option value="" disabled="" selected="">Alegeți clinica ...</option>
+                                        
+                                        <option value="scju_cluj-napoca">SCJU Cluj-Napoca, Clinica OG-Neonatologie 1</option>
+                                    
+                                        
+                                        <option value="alte_maternitati">Alte maternitati</option>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Parola</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <a class="uk-form-icon uk-form-icon-flip" href="#" onclick="showPasswordButton()"><i class="fa-solid fa-eye-slash"></i></a>
+                                        <input class="uk-input" id="password" name="password" placeholder="..." required="" type="password" value="" aria-label="Clickable icon">
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Confirmare parolă</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <a class="uk-form-icon uk-form-icon-flip" href="#" onclick="showPasswordButton2()"><i class="fa-solid fa-eye-slash"></i></a>
+                                        <input class="uk-input" id="password2" name="password2" placeholder="..." required="" type="password" value="" aria-label="Clickable icon">
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Confirmare reCAPTCHA</label>
+                                <div class="uk-form-controls">
+        <script src="https://www.google.com/recaptcha/api.js?hl=ro" async="" defer=""></script>
+        <div class="g-recaptcha" data-sitekey="6Le1LxMjAAAAAAc2yKtgrrEowaxdfWj0NLpwW5CC"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le1LxMjAAAAAAc2yKtgrrEowaxdfWj0NLpwW5CC&amp;co=aHR0cHM6Ly9zdXMtdGluLmFybmlzLm9uZzo0NDM.&amp;hl=ro&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;size=normal&amp;cb=44mfmicxd6h2" width="304" height="78" role="presentation" name="a-z3fynmg1u7c3" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+        </div>
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Termeni și Condiții</label>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <input class="uk-checkbox" id="terms_and_conditions" name="terms_and_conditions" required="" type="checkbox" value="y"> Bifând această casută confirmați că ați citit <b><a href="#termeni-si-conditii" uk-toggle="" aria-expanded="false"> Termenii și Condițiile</a></b> și sunteți de acord <span class="uk-text-bold">(obligatoriu)</span>.</div>
+                                
+                            </div>
+                            
+                            <div id="termeni-si-conditii" uk-modal="bg-close:false;" class="uk-modal">
+                                <div class="uk-modal-dialog">
+                            
+                                    <div class="uk-modal-header">
+                                        <h2 class="uk-modal-title uk-text-center">TERMENI ȘI CONDIȚII<br>DE UTILIZARE A SITE-ULUI<br>SUS-TIN.RO</h2>
+                                    </div>
+                            
+                                    <div class="uk-modal-body uk-overflow-auto" uk-overflow-auto="">
+                            
+                                        <p class="uk-text-lead">I. INFORMAȚII GENERALE</p>
+        
+                                        <p>Site-ul <b>sus-tin.ARNIS.ong</b> este deținut și administrat de către <b>Asociația Română pentru Nou-născuții Îndelung Spitalizați  - ARNIS</b>, cu sediul în București, Sector 1, Str. Aleea Privighetorilor, nr. 86H, România, având codul de identificare fiscală 32224197, reprezentată prin Corina Croitoru, Președinte (în continuare, „<b>ARNIS</b>”), email: contact @ <b>ARNIS</b>.ong.</p>
+                                        <p>Site-ul se referă la pagina de internet/ numele de domeniu sus-tin.<b>ARNIS</b>.ong și/ sau subdomeniile acestuia și orice aplicații software aferente (în continuare, „Site-ul”).</p>
+                                        <p>Scopul acestor „Termeni și Condiții” este de a oferi informaţii privind utilizarea Site-ului și conținutul acestuia, precum și de a realiza reglementarea relației cu dvs., în calitate de vizitator sau utilizator al Site-ului. </p>
+                                        <p>Utilizarea Site-ului constituie acordul dvs. implicit cu privire la respectarea termenilor și condițiilor prevăzute în cuprinsul acestui document, cu toate efectele și consecințele care decurg din aceasta. De aceea, vă rugăm să citiți cu atenție termenii și condițiile înainte de accesarea și utilizarea Site-ului. În cazul în care nu sunteți de acord cu termenii și condițiile de utilizare, vă rugăm să nu accesați și să nu utilizați Site-ul.</p>
+                                        <p><b>ARNIS</b> își rezervă dreptul de a modifica oricând conținutul „Termenilor și Condițiilor” de utilizare a Site-ului sus-tin.ro. Deși <b>ARNIS</b> va depune eforturi rezonabile pentru a vă informa cu privire la orice astfel de modificare ori de câte ori va fi posibil, avem rugămintea să verificați periodic secțiunea „Termeni și Condiții” de pe Site. Aceste modificări vă sunt opozabile de la data afișării lor la adresa www.sus-tin.<b>ARNIS</b>.ong/termeni-si-conditii sau pe pagina principală a Site-ului, unde „Termenii și Condițiile” pot fi consultați oricând în varianta actualizată.</p>
+                                        <p>În măsura în care nu veți mai fi de acord cu noile prevederi, vă rugăm să nu mai continuați utilizarea Site-ului. Dacă veți continua să utilizați Site-ul după orice modificare, vom presupune că ați fost de acord cu modificarea menționată.</p>
+                                        <p><b>ARNIS</b> își rezervă dreptul de a remedia în orice modalitate permisă de lege orice încălcare a acestor termeni și condiții, inclusiv încălcarea drepturilor <b>ARNIS</b> referitoare la sigla și logo-ul organizației <b>ARNIS</b> și/sau ale proiectului SUS-TIN și a drepturilor de autor referitoare la conținutul Site-ului.</p>
+                                        <p>Site-ul sus-tin.<b>ARNIS</b>.ong este pus la dispoziția utilizatorilor pentru a fi folosit numai în interes personal sau profesional (pentru cadre medicale) și în scop educațional. </p>
+                                        <p>Conținutul site-ului sus-tin.<b>ARNIS</b>.ong este selectat după criteriile asociației <b>ARNIS</b> și la libera alegere a acesteia. <b>ARNIS</b> își rezervă dreptul de a modifica în orice moment conținutul site-ului, inclusiv „Termenii și Condițiile” de utilizare ale acestuia. Folosirea în continuare a Site-ului înseamnă acceptarea noilor termeni și condiții.</p>
+                                        
+                                        <p class="uk-text-lead">II. DEFINIȚII</p>
+                                        
+                                        <p>În cuprinsul prezentului material, următorii termeni au următorul înţeles:</p>
+                                        <ul class="uk-list">
+                                            <li>site: platforma online aparținând și administrată de <b>ARNIS</b>, care se află la adresa www. sus-tin.<b>ARNIS</b>.ong, prin intermediul căruia utilizatorul are acces la informații privind proiectul SUS-TIN și activitatea <b>ARNIS</b>;</li>
+                                            <li>conținutul site-ului: orice material, orice informație, publicate pe site sub orice formă - text, fotografii, grafică, audio, video;</li>
+                                            <li>utilizator/ vizitator: persoana care accesează site-ul, în scopuri private sau profesionale și care a acceptat "Termenii și Condițiile” de utilizare ale prezentului site;</li>
+                                            <li>utilizare abuzivă: utilizarea site-ului într-un mod contrar practicii în domeniu, a reglementărilor și legislației în vigoare sau în orice alt mod care poate aduce prejudicii <b>ARNIS</b>, precum și utilizarea conținutului site-ului fără a indica sursa;</li>
+                                            <li>beneficiar: orice persoana care primește orice fel de ajutor din partea <b>ARNIS</b>;</li>
+                                            <li>părinte / părinți: reprezentantul legal al beneficiarului, dacă acesta este minor;</li>
+                                            <li>reprezentant legal: este persoana care reprezintă în mod legal beneficiarul, oricare ar fi el;</li>
+                                            <li>donație singulară sau recurentă: donațiile cu cardul bancar pe site se fac prin procesatorul de plăți Stripe, intrând din Paginile „Donează” sau „SUSȚINE”;</li>
+                                            <li>donație din impozit pe venituri: este donația realizată prin completarea Cererii ANAF privind Destinația Sumei Reprezentând până la 3,5% din impozitul anual datorat, pentru o perioadă de maxim un an;</li>
+                                            <li>fundraising: activitate de strângere de fonduri din donații;</li>
+                                            <li>donator: persoană care efectuează o donație în Paginile „Donează” sau „SUSȚINE” site-ului sus-tin.<b>ARNIS</b>.ong;</li>
+                                            <li>chat-ul - este serviciul de chat cu medicul curant disponibil părinților/reprezentantului legal pentru obținerea de informații cu privire la starea de sănătate a noului născut, cu privire la servicii medicale disponibile, suport în legatură cu programările sau accesarea unor servicii suplimentare.\</li>
+                                        </ul>
+        
+                                        <p class="uk-text-lead">III. ACCESAREA ȘI UTILIZAREA SITE-ULUI</p>
+                                        <p>Accesul pe Site este gratuit și, în principiu, permis oricărui vizitator.</p>
+                                        <p>Cu toate acestea, <b>ARNIS</b> își rezervă dreptul de a restricționa, fără o notificare prealabilă, accesul unui vizitator pentru motive justificate, precum ipoteza în care avem motive temeinice să considerăm că acțiunile vizitatorului/utilizatorului ar aduce atingere prezenților „Termeni și Condiții” sau utilizarea Site-ului se realizează de o manieră abuzivă, ilegală sau rău intenționată, ori în ipoteza în care, prin activitatea și conduita vizitatorului/ utilizatorului pe Site, acesta din urmă ar putea prejudicia în orice fel <b>ARNIS</b>.</p>
+                                        <p><b>ARNIS</b> nu răspunde pentru consecințele, inclusiv financiare, ce decurg din utilizarea site-ului, inclusiv folosirea necorespunzătoare, improprie sau frauduloasă a acestuia.</p>
+                                        <p><b>ARNIS</b> colaborează cu specialiști IT pentru oferirea unor servicii de calitate la navigarea pe Site-ul sus-tin.<b>ARNIS</b>.ong. Pentru a ne asigura că datele dvs. cu caracter personal nu fac obiectul unui acces neautorizat, al unei utilizării neautorizate a datelor, sau al distrugerii, pierderii sau alterării datelor, folosim măsuri tehnice și organizatorice adecvate, luând toate măsurile de protecție rezonabile. Cu toate acestea, <b>ARNIS</b> nu garantează și nu își asumă responsabilitatea pentru o eventuală contaminare cu viruși informatici sau orice altă contaminare care are proprietăți distructive. Nicio transmisiune pe internet nu este 100% sigură, de aceea orice informație transmisă prin mijloace electronice implică riscul utilizatorului.</p>
+                                        <p>Site-ul vă este pus la dispoziție, în conformitate cu acești termeni și condiții, „ca atare”, fără niciun fel de garanții, explicite sau implicite.</p>
+                                        
+                                        <p class="uk-text-lead">IV. WEBSITE-URI EXTERNE</p>
+                                        <p>Site-ul sus-tin.<b>ARNIS</b>.ong poate conține link-uri către alte site-uri care nu sunt controlate de către <b>ARNIS</b>. <b>ARNIS</b> pune la dispoziție aceste link-uri doar cu caracter informativ și pentru a ajuta utilizatorul, iar includerea acestora nu presupune ca <b>ARNIS</b> să obțină vreo aprobare în acest sens din partea site-urilor respective. <b>ARNIS</b> nu își asumă nicio responsabilitate pentru conținutul acestor site-uri sau în legătură cu acestea.</p>
+                                        
+                                        <p class="uk-text-lead">V. SERVICIILE OFERITE PE SITE-UL sus-tin.<b>ARNIS</b>.ong</p>
+                                        <p>SUS-TIN este un proiect care presupune dezvoltarea unei Platforme online cu denumirea „SUS-TIN”, ce va conecta părinţii/ reprezentanții legali cu nou-născuţii din Secţia de Terapie Intensivă Neonatală („Secţia TIN”), printr-o reţea de camere video care vor realiza o transmisiune în direct („live streaming”), exclusiv video. </p>
+                                        <p>Site-ul sus-tin.<b>ARNIS</b>.ong își dorește de asemenea asigurarea unui spaţiu online de comunicare între cadrele medicale și părinţii copiilor din Secţia TIN, educarea părinţilor despre puericultură, asigurarea unei platforme de fundraising pentru <b>ARNIS</b>, pentru oferirea de sprijin bebelușilor îndelung spitalizaţi și familiilor acestora în procesul de recuperare medicală.</p>
+                                        
+                                        <p>Site-ul sus-tin.<b>ARNIS</b>.ong este împărțit în următoarele pagini/ secţiuni, despre care veţi găsi detalii în capitolele următoare:</p>
+                                        1. Comunicare video părinți - nou născuții aflați pe secția de Terapie Intensivă Neo-Natală<br>
+                                        2. Educarea părinților despre puericultură<br>
+                                        3. Comunicare medici-părinții de nou născuții aflați pe secția de Terapie Intensivă Neo-Natală<br>
+                                        4. Fundraising<br>
+                                        5. Comunicarea rezultatelor Platformei SUS-TIN<br>
+                                        
+                                        <p class="uk-text-lead">VI. SECŢIUNEA SITE-ULUI DE COMUNICARE VIDEO PĂRINȚI - NOU NăSCUȚI AFLAȚI PE SECȚIA DE TERAPIE INTENSIVĂ NEO-NATALĂ</p>
+                                        <p>În cadrul acestei pagini, părinții au posibilitatea de a accesa un link prin care își pot urmări în direct („live”) nou-născuții aflați pe secția de Terapie Intensivă Neo-Natală. Pagina este accesibilă doar părinților care dețin un cont activ pe Site. Transmisiunea este exclusiv video, fără sonor.</p>
+                                        <p>Accesul este permis doar mamei/tatălui/ eprezentantului legal, fiecare dintre aceștia având un cont separat. Dacă este prezent în îngrijirea copilului doar a unui părinte, se poate da accesul unui alt membru al familiei/prieten al familiei, cu acordul scris al părintelui prezent.</p>
+                                        <p>Pe fiecare cont este posibilă doar vizionarea copilului în discuţie, printr-o focusare zoom a camerei de supraveghere aflată în spital. Accesarea imaginilor se face în intervalul orar agreat de <b>ARNIS</b> cu spitalul, iar pornirea transmisiunii video se realizează automat sau de cadrele medicale din spital. </p>
+                                        <p>În situația în care în Secția de Terapie Intensivă Neo-Natală sunt internați gemeni/tripleți, pentru fiecare dintre nou-născuți se va organiza o transmisiune live în mod separat, dacă sunt în incubatoare diferite.</p>
+                                        <p>În anumite situații (ca de exemplu, o urgență medicală, igienizarea incubatorului/ salonului de Terapie Intensivă Neonatală, întreruperi de electricitate, defecțiuni ale furnizării de servicii internet, defecțiune a platformei) se poate opri transmisiunea în intervalul agreat, acest fapt fiind semnalat prin următorul mesaj: „Transmisiune temporar indisponibilă”.</p>
+                                        
+                                        <p>Părinții/ reprezentantul legal au următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>De a crea un cont pe Site, cu acceptarea expresă a Politicii <b>ARNIS</b> de confidenţialitate a datelor cu caracter personal; </li>
+                                            <li>De a nu fotografia sau filma transmisiunile video realizate pe Site-ul sus-tin.ro;</li>
+                                            <li>De a nu comunica user-ul și parola către terți, chiar dacă sunt din aceeași familie;</li>
+                                            <li>De a nu folosi transmisiunile decât în scopul în care au fost permise, acela de a avea acces vizual la copil;</li>
+                                            <li>De a nu utiliza imaginile/ transmisiunea pentru a analiza actul medical sau de îngrijire;</li>
+                                            <li>De a anunța telefonic la numărul de telefon 0745.639.898 dacă în transmisiune apare în mod accidental o altă persoană sau alt copil, în afara copilului/ copiilor săi.</li>
+                                        </ul>
+                                        <p><b>ARNIS</b> își asumă următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>De a nu înregistra imaginile transmise din spital;
+                                            </li><li>De a nu stoca imaginile/video-urile de transmisie live.
+                                        </li></ul>
+                                        
+                                        <p>Cadrele medicale au următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>De a nu înregistra sau stoca imaginile/videourile de transmisie live;</li>
+                                            <li>De a nu aproba pentru terți accesul la camerele video. </li>
+                                        </ul>
+                                        
+                                        <p class="uk-text-lead">VII. SECŢIUNEA SITE-ULUI DE EDUCARE A PĂRINȚILOR DESPRE PUERICULTURĂ</p>
+                                        <p>Această pagină pune la dispoziția părinților/ viitorilor părinți a următoarelor cursuri:</p>
+                                        <ul class="uk-list">
+                                            <li>Cursuri puericultură pentru părinți/viitori părinți de nou-născuți la termen, din afara sau din Maternitatea parteneră;</li>
+                                            <li>Curs îngrijire adaptat pentru nou-născuții îndelung spitalizați, din Secția de Terapie Intensivă Neo-Natală, pentru părinți din afara sau din Maternitate parteneră.</li>
+                                        </ul>
+                                        <p>Toate drepturile asupra conţinutului acestei pagini sunt rezervate <b>ARNIS</b>. În acest sens, Părinții/reprezentantul legal au obligația de a se abține de la a reproducere, fotocopia, cita, comercializa cursurile fără acordul <b>ARNIS</b>.</p>
+                                        <p>Informaţiile puse la dispoziţie în această secţiune au strict valoare informativă și nu înlocuiesc sfaturile unui medic profesionist. Materialele educaţionale din această secţiune a Site-ului sus-tin.<b>ARNIS</b>.ong nu furnizează scheme de tratament și nu recomandă medicamente sau alte produse farmaceutice. În situația în care nou-născutul prezintă probleme de sănătate, există obligația părintelui/reprezentantului legal de a contacta medicul specialist. </p>
+                                        <p>Deţinătorul drepturilor de autor (<b>ARNIS</b>) nu poate fi tras la răspundere pentru interpretarea greşită a informaţiilor din această secţiune a Site-ului sau pentru starea de sănătate a mamei şi/sau a copilului.</p>
+                                        <p>După parcurgerea Cursului de puericultură și după parcurgerea testelor de evaluare cu 50% răspunsuri corecte, părinții vor primi o Adeverință de participare nominală. În acest scop, cadrele medicale pot avea acces la informații privind capitolele din Cursurile de pe Site pe care părinții le-au parcurs, iar prin acceptarea prezentei secțiuni de Termeni și Condiții, părinții/reprezentanţii legali își dau acordul cu privire la acest aspect.</p>
+                                        <p>Adeverinţa mai sus menţionată nu este echivalentul Certificatului pentru Cursul de puericultură prevăzut de Legea concediului paternal nr.210/1999, aprobată prin H.G. nr.244/2000, însă pe baza Adeverinţei, părintele poate merge la medicul de familie pentru obţinerea Certificatului prevăzut de Legea nr.210/1999.</p>
+                                        
+        
+                                        <p class="uk-text-lead">VIII. SECŢIUNEA SITE-ULUI DE COMUNICARE MEDICI-PĂRINȚI DE NOU NĂSCUȚI AFLAȚI PE SECȚIA DE TERAPIE INTENSIVĂ NEO-NATALĂ</p>
+                                        <p>În cadrul acestei pagini, părinții/reprezentanții legali au posibilitatea de a comunica cu medicii din Secția de Terapie Intensivă Nou-Natală a Maternității partenere. Pagina poate fi accesată doar de părinți/reprezentanții legali în baza unui cont activ pe Site-ul sus-tin.<b>ARNIS</b>.ong.</p>
+                                        <p>În cadrul acestei pagini se găsesc facilităţi de comunicare pentru: (i) perioada în care copilul este spitalizat și (ii) perioada în care copilul este externat.</p>
+                                        
+                                        <p>(i) Pentru perioada în care copilul este spitalizat:</p>
+                                        <ul class="uk-list">
+                                            <li><b>ARNIS</b> pune pe dispoziţie evaluarea de tip „General Movement Assesment” pentru copilul spitalizat;</li>
+                                            <li>Medicul curant poate trimite zilnic pe Platforma sus-tin.<b>ARNIS</b>.ong, în contul părinților/reprezentantului legal, istoricul medical al copilului, ce cuprinde informații referitoare la greutatea nou-născutului, alimentaţia nou-născutului, precum și planul de tratament;</li> 
+                                            <li>Medicul curant poate organiza conferinţe cu părinţii/reprezentanţii legali, prin aplicaţia Zoom, transmitând pe Site sus-tin.<b>ARNIS</b>.ong datele de logare pentru conferinţa Zoom;</li> 
+                                            <li>Părinţii pot comunica cu medicul curant prin intermediul unui chat. </li>
+                                        </ul>
+                                        <p>În urma aprobării de către părinți/ reprezentant legal a evaluării de tip „General Movement Assesment” a copilului, se va genera un Raport de evaluare, care va pus la dispoziția acestora pe Platforma sus-tin.ro. Evaluarea „General Movement Assesment” este gratuită și stabilește riscul copilului de a dezvolta dizabilități. Prin evaluare nu se pune un diagnostic. Evaluarea „General Movement Assesment” presupune filmări ale mișcărilor copilului, de 1-2 minute, furnizate de cadrele medicale din Maternitatea parteneră sau de părinți, unor specialiști care fac evaluarea, filmările fiind stocate pe platforma SUS-TIN. Filmările pentru evaluarea „General Movement Assesment” pot fi utilizate pentru studii ale spitalului.</p>
+                                        <p>(ii) Pentru perioada în care copilul este externat: </p>
+                                        <ul class="uk-list">
+                                            <li>Platforma SUS-TIN poate trimite părinţilor notificări de tip reminder (opționale) pentru următoarele tipuri de servicii: controale medicale (oftalmologie, neurologie, pediatrie, etc.) și vaccinări/imunizări până la 12 luni;</li>    
+                                            <li>Platforma SUS-TIN permite următoarele facilităţi: efectuare de programări pentru obținerea biletului de trimitere; programare la control în intervalul de zile setat de medici (pe platformă se fac recomandări de medici, însă părinții/reprezentantul legal au facultatea de a alege specialiștii); acordarea de acces medicilor de către părinte pe drive-ul său personal pentru a consulta rezultele unor alte controale medicale, care pot fi relevante pentru stabilirea unui diagnostic și a unor recomandări privitoare la starea de sănătate a copilului;</li>
+                                            <li>Platforma SUS-TIN va conţine informaţii privind semne generale de urgență medicală, când părinţii trebuie să se prezinte la camera de gardă cu nou-născutul;</li>   
+                                            <li>Într-un interval de 6 luni, 12 luni, 18 luni, 24 luni și 36 luni, de pe Platforma SUS-TIN se trimit remindere pentru ca părinții să trimită (opţional) cadrelor medicale fotografii cu copilul, informaţii privind greutatea acestuia, alte achiziţii de dezvoltare a copilului, și ce diagnostice i-au fost puse între timp copilului.</li>    
+                                        </ul>
+                                        <p>Părinții/ reprezentantul legal au următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>Să își exprime acordul privind evaluarea „General Movement Assesment”;</li>
+                                            <li>În primele 30 zile de la externare, părinţii au obligaţia să trimită la fiecare 3 zile prin intermediul Platformei SUS-TIN informații precum: greutatea copilului, alimentaţia, tipul de scaun, vărsături etc. În acest sens, aplicația va trimite notificări de tip reminder.</li> 
+                                        </ul>
+                                        <p><b>ARNIS</b> are următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>De a respecta confidențialitatea informațiilor medicale transmise de părinți și de cadrele medicale;</li>
+                                            <li>De a lua măsuri de securitate a datelor stocate pe Platforma SUS-TIN.M</li>
+                                        </ul>
+                                        <p>Cadrele medicale au următoarele obligații:</p>
+                                        <ul class="uk-list">
+                                            <li>De a respecta confidențialitatea informațiilor medicale transmise de părinți;</li>
+                                            <li>De a transmite la timp informaţiile medicale privind copilul.</li>
+                                        </ul>
+                                        
+                                        <p class="uk-text-lead">IX. SECŢIUNEA SITE-ULUI DE FUNDRAISING</p>
+                                        <p>SUS-TIN,  cât și întreaga noastra activitate administrativă, are nevoie de susținerea dumneavoastră pentru buna funcționare. </p>
+                                        <p>A. Modalități de a face o donație</p>
+                                        <p>Se pot face următoarele tipuri de donații:</p>
+                                        <ul class="uk-list">
+                                            <li>Donație singulară sau recurentă constând în transferul unor sume de bani către <b>ARNIS</b> prin intermediul procesatorului de plăți Stripe;</li>
+                                            <li>Donație efectuată prin redirecționarea cotelor stabilite de lege din impozitul pe venit, în conformitate cu dispozițiile Codului Fiscal.</li>
+                                        </ul>
+                                        <p>Donația prin procesatorul de plăți Stripe</p>
+                                        <p>Donația prin intermediul procesatorului de plăți se efectuează în felul următor:</p>
+                                        <p>Utilizatorul alege o modalitate de donație – singulară sau recurentă și transferul prin card. Ulterior va fi redirecționat către o pagină securizată. Donația prin card este facilitata si securizată de Stripe. Datele bancare sunt protejate de Platforma Stripe. Pentru mai multe detalii, vă rugăm să verificați termenii și condițiile Stripe aici (link).</p>
+                                        <p>Donația se poate face prin intermediul unui computer sau telefon cu conexiune la internet și prin folosirea cardului personal.</p>
+                                        <p>Donaţia recurentă se poate întrerupe oricând, trimiţând un email către contact@<b>ARNIS</b>.ong, iar <b>ARNIS</b> se obligă să asigure setarea întreruperii donaţiei în cel mai scurt timp sau maxim în termen de 5 zile lucrătoare de la primirea instrucţiunilor în acest sens.</p>
+                                        <p>Comisioane bancare</p>
+                                        <p>Stripe, sau entitatea bancară la care utilizatorul are card, pot percepe comisioane pentru procesarea donațiilor.</p>
+                                        <p>În acest sens, donatorul este de acord cu următoarele:</p>
+                                            a) Comisioanele bancare aferente fiecarei donații (acolo unde este cazul) vor fi suportate direct de către donator;<br>
+                                            b) Donatorul va suporta comisioanele bancare de transfer ale donațiilor din contul donatorului în contul <b>ARNIS</b>, daca acest transfer se realizează în orice alta valută în afară de RON, și/sau dacă transferul se efectuează din străinatate.<br>
+                                        
+                                        <p>Donația efectuată prin redirecționarea cotelor stabilite de lege din impozitul pe venit, în conformitate cu dispozițiile Codului Fiscal</p>
+                                        <p>Salariații/ persoanele care datorează impozit pe venit au posibilitatea de a redirecționa 3,5% din impozitul pe venit Asociației <b>ARNIS</b>.</p>
+                                        <p>Această redirecționare a 3,5% din impozitul pe venit nu reprezintă niciun cost suplimentar pentru utilizator, această contribuție fiind oricum obligatorie.</p>
+                                        <p>Toate informațiile referitoare la această prevedere legală se pot găsi la următorul link: https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Ghid_redirectionare_imp.pdf</p>
+                                        
+                                        <p class="uk-text-lead">B. ADMINISTRAREA DE CăTRE <b>ARNIS</b> A DONAȚIILOR</p>
+                                        
+                                        <p><b>ARNIS</b> se obligă:</p>
+                                        <ul class="uk-list">
+                                            <li>să folosească donațiile pentru implementarea platformei SUS-TIN și în alte maternități din România, ulterior implementării pilot din Maternitatea parteneră; </li>
+                                            <li>să folosească donațiile pentru implementarea proiectului „Pui de om în terapie” în maternitățile partenere (despre acest proiect puteţi citi mai multe detalii aici: link);</li>
+                                            <li>să solicite acordul de a contacta telefonic sau pe mail vizitatorii sau utilizatorii Site-ului sus-tin.<b>ARNIS</b>.ong pentru formulare de redirecționare a 3,5% impozit, pentru donații recurente/unice și/sau sponsorizări.</li>
+                                        </ul>
+                                        
+                                        <p class="uk-text-lead">X. SECŢIUNEA SITE-ULUI DE COMUNICARE REZULTATE PLATFORMĂ</p>
+                                        <p>Pagina de Comunicare Rezultate Platformă are ca scop transparența donațiilor și informații generale referitoare la modul în care platforma își îndeplinește obiectivul de a crește calitatea serviciilor medicale și sociale acordate nou-născuţilor ce necesită spitalizare îndelungată, precum și obiectivul de a facilita comunicarea dintre cadrele medicale și familiile nou-născuţilor.</p>
+                                        <p>În acest sens, pagina afișează:</p>
+                                        <ul class="uk-list">
+                                            <li>Numărul de utilizatori total (părinți și cadre medicale);  </li>
+                                            <li>Numărul de ore de live-streaming;   </li>
+                                            <li>Numărul de donatori recurenți/unici pe platforma; </li>
+                                            <li>Donația media recurentă/ unică; </li>
+                                            <li>Sumele totale colectate din donații; </li>
+                                            <li>Timp alocat în accesarea resurselor educaționale.   </li>
+                                        </ul>
+        
+                                        <p><b>ARNIS</b> se obligă:</p>
+                                        <ul class="uk-list">
+                                            <li>să furnizeze informații corecte și actualizate; </li>
+                                            <li>să fie transparent în comunicarea rezultatelor. </li>
+                                        </ul>
+                                        
+                                        <p class="uk-text-lead">XI. DREPTURILE DE PROPRIETATE INTELECTUALĂ ȘI INDUSTRIALĂ</p>
+                                        <p>Toate drepturile de proprietate intelectuală și industrială cu privire la conținutul Site-ului sus-tin.<b>ARNIS</b>.ong, denumirile comerciale, numele de domenii sau alte indicații ale originii bunurilor/serviciilor aparțin și sunt rezervate <b>ARNIS</b>. Accesarea și utilizarea Site-ului este permisă sub condiția respectării acestor drepturi.</p>
+                                        <p>Prin „Conținut” în sensul prezentului document se înțelege totalitatea materialelor disponibile pe Site-ul sus-tin.<b>ARNIS</b>.ong, cum ar fi, dar fără a se limita la, imagini (statice sau dinamice), fotografii, videoclipuri, elemente de efecte vizuale, conținut multimedia, alte fișiere video sau audio, text, informații, mărci, logo-uri, design-ul site-ului, pictogramele butoanelor, cursurile de puericultură, etc.</p>
+                                        <p>Nu este permisă copierea, utilizarea, reproducerea, descărcarea, distribuirea, publicarea, modificarea, alterarea Conținutului Site-ului, direct sau indirect, temporar ori permanent, prin orice mijloc și sub orice formă, precum și stocarea permanentă ori temporară a acestuia cu mijloace electronice, fără a deține un acord scris, prealabil, din partea <b>ARNIS</b>.</p>
+                                        <p>Se află de asemenea sub interdicția menționată la paragraful anterior orice element în sensul Conținutului care nu este disponibil pe site-ul sus-tin.<b>ARNIS</b>.ong și care este furnizat de către noi vizitatorului/utilizatorului sau la care vizitatorului/utilizatorului îi este permis accesul, prin orice mijloace (spre exemplu, prin e-mail), ca urmare a solicitării de informații suplimentare și/ sau în timpul procesului de negociere a unui acord.</p>
+                                        <p>În măsura în care între noi și dvs. se încheie un acord separat cu privire la orice element al Conținutului Site-ului, utilizarea acestui element se va realiza în conformitate cu prevederile respectivului acord.</p>
+        
+                                        <p class="uk-text-lead">XII. CONFIDENȚIALITATEA ȘI PROTECȚIA DATELOR CU CARACTER PERSONAL</p>
+                                        <p><b>ARNIS</b> depune toate eforturile pentru a respecta confidențialitatea datelor dvs. pe care ni le furnizați și a prelucra datele cu caracter personal în conformitate cu dispozițiile legale aplicabile și cu opțiunile dvs. în acest sens.</p>
+                                        <p>În acest sens, vă rugăm să citiți cu atenție secțiunile privind Politica de confidențialitate (link). Utilizarea Site-ului constituie acordul dvs. implicit cu privire la Politica de confidențialitate.</p>
+                                        
+                                        <p class="uk-text-lead">XIII. LEGISLAȚIA APLICABILĂ ȘI SOLUȚIONAREA DIFERENDELOR</p>
+                                        <p>Orice diferend care ar putea decurge din sau în legătură cu accesarea și utilizarea Site-ului va fi guvernat de legislația din România și se va încerca soluționarea acestuia prin mediere.</p>
+                                        <p>Cu toate acestea, <b>ARNIS</b> își rezervă dreptul de a iniția, fără notificare prealabilă, orice acțiune sau procedură legală înaintea oricărei instanțe judecătorești competente împotriva dvs. în măsura în care consideră că acțiunile dvs. sunt prejudiciabile și o astfel de măsură este necesară sau urgentă, în funcție de circumstanțe.</p>
+                                        
+                                        <button class="uk-button uk-button-default uk-modal-close uk-alert-danger" type="button" onclick="toogleCheckboxTermenisiConditii()">Sunt de acord cu Termenii și Condițiile SUS-TIN</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Politica de Confidenţialitate (GDPR)</label>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <input class="uk-checkbox" id="privacy_policy" name="privacy_policy" required="" type="checkbox" value="y"> Bifând această casută confirmați că ați citit <b><a href="#politica-de-confidentialitate" uk-toggle="" aria-expanded="false">Politica de Confidenţialitate (GDPR)</a></b> și sunteți de acord <span class="uk-text-bold">(obligatoriu)</span>.</div>
+                                
+                            </div>
+                    
+        
+                            <div id="politica-de-confidentialitate" uk-modal="bg-close:false;" class="uk-modal">
+                                <div class="uk-modal-dialog">
+        
+                                    <div class="uk-modal-header">
+                                        <h2 class="uk-modal-title">Politica de Confidenţialitate (GDPR)</h2>
+                                    </div>
+                            
+                                    <div class="uk-modal-body uk-overflow-auto" uk-overflow-auto="">
+        
+                                        <p class="uk-text-lead">I. Informații generale</p>
+                                        <p>1.1. Protecţia datelor dumneavoastră cu caracter personal reprezintă o preocupare deosebită pentru  Asociaţia Română pentru Nou-născuții Îndelung Spitalizați - ARNIS (denumită în continuare „ARNIS”), cu sediul în Bucureşti, Aleea Privighetorilor, nr. 86H, Sector 1, CIF: 32224197, număr de înregistrare în Registrul Naţional al Asociaţiilor şi Fundaţiilor: 68/28.08.2013, email: contact@arnis.ong, în calitate de operator de date.</p>
+                                        <p>1.2. Acest document are rolul de a vă informa cu privire la prelucrarea datelor dumneavoastră cu caracter personal, în contextul utilizării paginii de internet sus-tin.arnis.ong („Site-ul” sau „Platforma”) şi al dorinţei de a fi informat despre campaniile ARNIS.</p>
+                                        <p>1.3. <b>ARNIS</b> prelucrează datele dvs. cu caracter personal în mod transparent, în acord cu prevederile Regulamentului European (UE) nr.679 din 27 aprilie 2016 privind protecţia datelor cu caracter personal („GDPR”).</p>
+                                        <p>1.4. Datele cu caracter personal reprezintă orice informații care se referă la o persoană fizică identificată sau identificabilă. Prin prelucrarea datelor cu caracter personal se înțelege orice operațiune sau set de operațiuni efectuate asupra datelor cu caracter personal, cu sau fără utilizarea de mijloace automate, cum ar fi, de  exemplu, colectarea, înregistrarea, organizarea, structurarea, stocarea, adaptarea sau modificarea, extragerea, consultarea, utilizarea, divulgarea prin transmitere, diseminarea sau punerea la dispoziție în orice  alt mod, alinierea sau combinarea, restricționarea, ștergerea sau distrugerea.</p>
+                                            
+                                        <p class="uk-text-lead">II. Categoriile de date cu caracter personal prelucrate</p>
+                                        <p>2.1. Dacă sunteți vizitator/utilizator al Site-ului, <b>ARNIS</b> va prelucra datele dumneavoastră cu caracter personal pe care le furnizați în mod direct în contextul utilizării Site-ului.</p>
+                                        <p>2.2. Dacă doriţi să beneficiați de avantajele platformei SUS-TIN, vă veţi oferi datele personale solicitate prin unul din următoarele mijloace: completarea de către dumneavoastră a formularului de acces părinte (creare cont), inclusiv bifare acord de a fotografia copilul pentru promovare proiect SUS-TIN, bifare acord pentru evaluarea „General Movement Assesment” destinată copilului, bifare acord de a fi contactat telefonic sau prin email de ARNIS în scopuri de fundraising; completarea de către dumneavoastră a formularelor dedicate puse la dispoziţie de ARNIS pentru strângerea de fonduri; completarea de către dumneavoastră a formularului de „Newsletter”, solicitarea directă prin e-mail a materialelor informative elaborate de ARNIS.</p>
+                                        <p>2.3. În relaţia cu beneficiarii persoane fizice pot fi colectate următoarele date cu caracter personal: nume și prenume părinte, nume și prenume copil, localitatea de reședinţă, număr de telefon, adresă e-mail, fotografii copil; următoarele date medicale ale copilului (date personale cu caracter special): informaţia că a fost internat în secţia de terapie intensivă, perioada cât a fost internat în secţia de terapie intensivă.</p>
+                                        <p>2.4. <b>ARNIS</b> nu colectează alte date medicale ale copilului (date personale cu caracter special) cum ar fi: simptome; boli; diagnostice; analize și medicamente administrate; grupă sangvină; tratament prescris sau administrat; medicul consultat; recomandări medicale; date din dosarul medical din spital sau date despre istoricul medical al familiei; date genetice sau altele asemenea. Pe site-ul sus-tin.arnis.ong, în Secţiunea de „Comunicare medici-părinții de nou născuții aflați pe secția de Terapie Intensivă”, este posibilă încărcarea de către medicii din spital a unor informaţii de tipul celor enumerate în prezentul articol. În scopul ajutării părintelui, ARNIS va stoca din punct de vedere informatic aceste date în contul creat de părinte, însă aceste informaţii vor fi accesibile numai părintelui, prin accesarea contului său, pe perioada de validitate a contului, iar ARNIS nu va accesa aceste date și nu le va prelucra în vreun fel.</p>
+                                        <p>2.5. De asemenea, de fiecare dată când vă conectaţi pe Platforma sus-tin.arnis.ong,  se pot transmite automat date către serverul nostru, cum ar fi cele privind:</p>
+                                        <ul class="uk-list uk-list-disc">
+                                            <li>adresa IP a conexiunii la internet (privată sau publică în funcție de rețeaua la care este conectat dispozitivul folosit pentru accesarea Site-ului);</li>
+                                            <li>data și ora accesării;</li>
+                                            <li>adresa paginii sau a fișierului accesat;</li>
+                                            <li>adresa paginii sau identificatorul aplicației care a făcut legătura utilizatorului spre pagina noastră;</li>
+                                            <li>numele și versiunea aplicației folosite pentru accesarea paginii web;</li>
+                                            <li>numele și versiunea sistemului de operare;</li>
+                                            <li>informații de geolocalizare, în cazul în care ați activat în mod voit această funcție pe dispozitivul dumneavoastră.</li>
+                                        </ul>
+                                    
+                                        <p class="uk-text-lead">III. Scopurile și temeiurile prelucrării</p>
+                                        <p>3.1. Platforma <b>sus-tin.ro</b> dezvoltată de <b>ARNIS</b> are ca scop conectarea dintre părinţii/reprezentați legali cu nou-născuţii acestora aflaţi în Secţia de Terapie Intensivă Neonatală („Secţia TIN”), printr-o reţea de camere video care vor realiza o transmisiune în direct, exclusiv video. De asemenea, un alt scop este educarea viitorilor părinți și a părinţilor în general despre puericultură – fiind vizaţi aici atât părinţii cu nou-născuți la termen, cât și părinţii cu nou-născuți din Secția TIN. Site-ul sus-tin.arnis.ong asigură și un spaţiu online de comunicare între cadrele medicale și părinţii copiilor din Secţia TIN. Platforma realizează și comunicarea rezultatelor utilizării Platformei pentru oferirea de sprijin familiilor, îndeosebi a familiilor cu copii în procesul de recuperare medicală. </p>
+                                        <p>3.2. Dacă sunteți utilizator/vizitator al Site-ului, <b>ARNIS</b> prelucrează datele dumneavoastră cu caracter personal, astfel cum au fost menţionate în capitolul II, pentru următoarele scopuri:</p>
+                                        <ul class="uk-list uk-list-disc">
+                                            <li>pentru facilitarea unei conexiuni între dumneavoastră și copilul aflat în Secţia TIN, respectiv prin transmiterea live de imagini prin intermediul unei camere video amplasată în spital, cu focus asupra copilului, fără a avea loc nicio înregistrare, stocare sau prelucrare a acestor imagini de către ARNIS;</li>
+                                            <li>pentru facilitarea prestării de către spital de servicii medicale pentru dumneavoastră, are loc exclusiv o stocare în drive-ul pus la dispoziție de către dvs. a unor rapoarte medicale, evaluări și alte comunicări cu caracter medical informativ privind starea de sănătate a copilului, fără ca aceste date să fie accesate sau prelucrate de ARNIS în vreun fel; </li>
+                                            <li>pentru furnizarea către dvs. a Cursurilor de puericultură, respectiv atunci când prelucrarea este necesară în scop educațional și pentru acordarea Adeverinței de participare la Cursurile de Puericultură;</li>
+                                            <li>pentru activităţi de marketing şi comunicare, respectiv pentru transmiterea de informări privind activităţile, evenimentele, produsele şi serviciile oferite de ARNIS. De asemenea, prin formularul de creare Cont, vă puteţi exprima consimţământul pentru realizarea de către ARNIS a unor fotografii ale copilului pentru promovarea proiectului SUS-TIN. Vă puteți exprima consimțământul pentru prelucrarea datelor în scop de marketing și prin completarea și bifarea căsuței corespunzătoare din formularul pentru abonarea la Newsletter disponibil pe Site. Pentru dezabonarea de la primirea unor astfel de comunicări comerciale puteți folosi opţiunea de la finalul fiecărui e-mail/sms conţinând comunicări.</li>
+                                            <li>pentru rezolvarea plângerilor, reclamaţiilor şi pentru a monitoriza traficul și a îmbunătăţi experiența dumneavoastră oferită pe Site şi prin intermediul mesajelor e-mail/sms transmise de ARNIS. Prelucrarea datelor dumneavoastră pentru acest scop are la bază interesul legitim al ARNIS de a asigura funcționarea corectă a Site-ului, precum și pentru a îmbunătăți permanent experiența comunicării cu ARNIS. </li>
+                                        </ul>
+                                        <p>3.3. Prelucrarea datelor dumneavoastră pentru scopurile menţionate la punctul 3.2 mai sus are la bază consimțământul dumneavoastră, dacă alegeți să îl furnizați. Furnizarea datelor dumneavoastră în acest scop este voluntară. Refuzul furnizării consimțământului pentru prelucrarea datelor dumneavoastră în acest scop nu va avea urmări negative pentru dumneavoastră, însă nu veţi putea accesa facilităţile site-ului nostru.</p>
+                                    
+                                        <p class="uk-text-lead">IV. Durata pentru care prelucrăm datele</p>
+                                        <p>4.1. Ca principiu, ARNIS va prelucra datele dumneavoastră cu caracter personal atât cât este necesar pentru realizarea scopurilor de prelucrare menționate mai sus.</p>
+                                        <p>4.2. Dacă vă retrageți consimțământul pentru prelucrarea datelor în scop de marketing şi comunicare, ARNIS va înceta prelucrarea datelor dumneavoastră cu caracter personal în acest scop, fără însă a afecta prelucrările desfășurate de ARNIS pe baza consimțământului exprimat de către dumneavoastră înainte de retragerea acestuia.</p>
+                                    
+                                        <p class="uk-text-lead">V. Dezvăluirea datelor cu caracter personal</p>
+                                        <p>5.1. Pentru îndeplinirea scopurilor de prelucrare, ARNIS poate dezvălui datele dumneavoastră către parteneri, către terțe persoane sau entități care sprijină ARNIS în desfășurarea activității, către furnizori de servicii care oferă sprijin tehnic ARNIS pentru mentenanță/ dezvoltare software și asigurarea securităţii datelor; către partenerii din cadrul Consorţiului Active Citizens Fund România (care asigură finanţarea proiectului SUS-TIN); către medici colaboratori; către autorități publice din orice domeniu, din România (în special autorități publice în domeniul sănătății din România: Casa Națională de Asigurari de Sănătate, Ministerul Sănătății, Institutul Național de Sănătate Publică și altele) sau din străinatate (Oficiul Mecanismului Financiar al Granturilor SEE şi Norvegiene și altele) – la cererea acestora sau din inițiativa noastră, exclusiv în condițiile legislației aplicabile în România și în Uniunea Europeană, în următoarele cazuri exemplificativ enumerate:</p>
+                                        <ul class="uk-list uk-list-disc">
+                                            <li>pentru menținerea, administrarea, personalizarea și îmbunătățirea Site-ului și a serviciilor de comunicare de pe Site;</li>
+                                            <li>pentru efectuarea analizei datelor, testarea și cercetarea, monitorizarea tendințelor de utilizare și activitate, dezvoltarea caracteristicilor de siguranță și autentificarea utilizatorilor;</li>
+                                            <li>pentru transmiterea de comunicări comerciale de marketing, în condițiile și limitele prevăzute de lege;</li>
+                                            <li>în situațiile în care comunicarea ar fi necesară pentru atribuirea de diplome, premii sau alte facilități persoanelor vizate, obținute ca urmare a participării lor la diverse cursuri sau campanii promoționale organizate de către ARNIS;</li>
+                                            <li>atunci când dezvăluirea datelor cu caracter personal este prevăzută de lege etc.</li>
+                                            <li>pentru a îndeplini scopurile platformei prevăzute mai sus, la capitolul III;</li>
+                                            <li>pentru verificarea de către consorţiul Active Citizens Fund România a îndeplinirii scopurilor proiectului SUS-TIN, care beneficiază de un contract de finanţare nerambursabilă.</li>
+                                        </ul>
+                                        <p>5.2. Consorţiul Active Citizens Fund România este format din: Fundaţia pentru Dezvoltarea Societăţii Civile, Fundaţia pentru Parteneriat, Centrul de Resurse pentru Comunităţile de Romi, Fundaţia Pact cu sediul în România, Frivillighet Norge cu sediul în Norvegia. Politica privind prelucrarea datelor cu caracter personal din întreg programul „Active Citizens Fund Romania” poate fi consultată aici: https://activecitizensfund.ro/politica gdpr/. </p>
+                                    
+                                        <p class="uk-text-lead">VI. Transferul datelor cu caracter personal</p>
+                                    
+                                        <p class="uk-text-lead">6.1. Datele cu caracter personal furnizate către ARNIS pot fi transferate în afara României (în special în Belgia și Norvegia), cu respectarea condiţiilor stipulate de legislaţia europeană şi naţională în vigoare la momentul transferului.</p>
+                                    
+                                        <p class="uk-text-lead">VII. Drepturile de care beneficiaţi</p>
+                                    
+                                        <p class="uk-text-lead">7.1. În condițiile prevăzute de legislația în materia prelucrării datelor cu caracter personal, în calitate de persoane vizate, beneficiați de următoarele drepturi:</p>
+                                        <ul class="uk-list uk-list-disc">
+                                            <li>Dreptul la informare, respectiv dreptul de a primi detalii privind activitățile de prelucrare efectuate de către ARNIS, conform celor descrise în prezentul document;</li>
+                                            <li>Dreptul de acces la date, respectiv dreptul de a obține confirmarea din partea ARNIS cu privire la prelucrarea datelor cu caracter personal, precum și detalii privind activitățile de prelucrare, precum modalitatea în care sunt prelucrate datele, scopul în care se face prelucrarea, destinatarii sau categoriile de destinatari ai datelor, etc.;</li>
+                                            <li>Dreptul la rectificare, respectiv dreptul de a obține corectarea, fără întârzieri justificate, de către ARNIS a datelor cu caracter personal inexacte/nejustificate, precum și completarea datelor incomplete; Rectificarea/completarea va fi comunicată fiecărui destinatar la care au fost transmise datele, cu excepția cazului în care acest lucru se dovedește imposibil sau presupune eforturi disproporţionate;</li>
+                                            <li>Dreptul la ștergerea datelor („dreptul de a fi uitat”), fără întârzieri nejustificate, în cazul în care se aplică unul dintre următoarele motive: </li>
+                                            <li>acestea nu mai sunt necesare pentru îndeplinirea scopurilor pentru care au fost colectate sau prelucrate;</li>
+                                            <li>în cazul în care este retras consimțământul și nu există niciun alt temei juridic pentru prelucrare;</li>
+                                            <li>în cazul în care persoana vizată se opune prelucrării și nu există motive legitime care să prevaleze;</li>
+                                            <li>în cazul în care datele cu caracter personal au fost prelucrate ilegal;</li>
+                                            <li>în cazul în care datele cu caracter personal trebuie șterse pentru respectarea unei obligații legale;</li>
+                                            <li>datele cu caracter personal au fost colectate în legătură cu oferirea de servicii ale societății informaționale conform dreptului Uniunii sau al dreptului intern sub incidenta căruia se află operatorul;</li>
+                                            <li>este posibil ca, în urma solicitării de ștergere a datelor, ARNIS să anonimizeze aceste date (lipsindu-le astfel de caracterul personal) și să continue în aceste condiții prelucrarea pentru scopuri statistice.</li>
+                                            <li>dreptul la restricționarea prelucrării în măsura în care:</li>
+                                            <li>persoana contestă exactitatea datelor, pe o perioadă care ne permite verificarea corectitudinii datelor; o prelucrarea este ilegală, iar persoana vizată se opune ștergerii datelor cu caracter personal, solicitând în schimb restricționarea utilizării lor;</li>
+                                            <li>operatorul nu mai are nevoie de datele cu caracter personal în scopul prelucrării, dar persoana vizată i le solicită pentru constatarea, exercitarea sau apărarea unui drept în instanță; sau </li>
+                                            <li>persoana vizată s-a opus prelucrării (altele decât cele de marketing direct), pentru intervalul de timp în care se verifică dacă drepturile legitime ale operatorului prevalează asupra celor ale persoanei vizate.</li>
+                                            <li>Dreptul la portabilitatea datelor, respectiv (i) dreptul de a primi datele cu caracter personal într-o modalitate structurată, folosită în mod obișnuit și într-un format ușor de citit, precum și (ii) dreptul ca aceste date să fie transmise de către ARNIS către alt operator de date, în măsura în care sunt îndeplinite condițiile prevăzute de lege; </li>
+                                            <li>Dreptul la opoziție - în ceea ce privește activitățile de prelucrare se poate exercita prin transmiterea unei solicitări conform celor indicate mai jos:</li>
+                                            <li>în orice moment, din motive legate de situația particulară în care se află persoana vizată, ca datele care o vizează să fie prelucrate în temeiul interesului legitim al ARNIS sau în temeiul interesului public, cu excepția cazurilor în care ARNIS poate demonstra că are motive legitime și imperioase care justifică prelucrarea și care prevalează asupra intereselor, drepturilor și libertăților persoanelor vizate sau că scopul este constatarea, exercitarea sau apărarea unui drept în instanță;</li>
+                                            <li>în orice moment, în mod gratuit și fără nicio justificare, ca datele care o vizează să fie prelucrate în scop de marketing direct;</li>
+                                            <li>Dreptul de a nu fi supus unei decizii individuale automate, respectiv dreptul de a nu fi subiectul unei decizii luate numai pe baza unor activități de prelucrare automate, inclusiv crearea de profiluri, care produce efecte juridice care privesc persoana vizată sau o afectează într-o măsură semnificativă;</li>                                        <li>Dreptul de a vă adresa Autorităţii Naţionale de Supraveghere a Prelucrării Datelor cu Caracter Personal sau instanțelor competente, în măsura în care considerați necesar.</li>
+                                        </ul>
+                                    
+                                        <p class="uk-text-lead">VIII. Securitatea datelor dvs. cu caracter personal</p>
+                                        <p>8.1. ARNIS prelucrează datele dvs. cu caracter personal în siguranță. Pentru a ne asigura că datele dvs. cu caracter personal nu fac obiectul unui acces neautorizat, al unei utilizării neautorizate a datelor, sau al distrugerii, pierderii sau alterării datelor, folosim măsuri tehnice și organizatorice adecvate, luând toate măsurile de protecție rezonabile.</p>
+                                        <p>8.2. De asemenea, depunem toate eforturile rezonabile pentru a ne asigura că și partenerii noștri prelucrează datele dvs. cu caracter personal în același mod diligent, care să preîntâmpine accesul neautorizat, utilizarea neautorizată, distrugerea, pierderea sau alterarea datelor.</p>
+                                        <p>Pentru orice întrebări suplimentare cu privire la modul în care datele cu caracter personal sunt prelucrate și pentru a vă exercita drepturile menționate mai sus, vă rugăm să vă adresați la adresa de email: contact@arnis.ong.</p>
+                                        
+                                        <button class="uk-button uk-button-default uk-modal-close uk-alert-danger" type="button" onclick="toogleCheckboxPrivacyPolicy()">Sunt de acord cu Politica de Confidenţialitate (GDPR)</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Telefon (optional)</label>
+                                <div class="uk-form-controls"><input class="uk-input" id="telephone" maxlength="10" minlength="10" name="telephone" placeholder="..." type="text" value=""></div>
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Fundraising (optional)</label>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                <input class="uk-checkbox" id="arnis_fundraising" name="arnis_fundraising" required="" type="checkbox" value="y"> Sunt de acord să fiu contactat pentru comunicare despre proiectele ARNIS și fundraising.</div>
+                            </div>
+        
+        
+                            <div class="uk-margin-small">
+                                
+                            </div>
+        
+                            <div class="uk-margin">
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <input class="uk-button uk-button-default uk-width-medium uk-align-center" id="submit" name="submit" type="submit" value="Înregistrare cont nou">
+                                </div>
+                            </div>
+                    
+                        </fieldset>
+                    </form>
+        
+                    </div>
+            
+            </div>
+            
+        </div>
+    </section>
+    <div class="right-widget">
+        <a href="tel:0745639898">
+            <img src="./images/button-floating-phone.png" width="48" height="48" alt="Telefon" style="margin-left: 20px;"><br>
+        </a>
+
+        <a href="mailto:contact@arnis.ong">
+            <img class="uk-margin-small-top" src="./images/button-floating-email.png" width="48" height="48" alt="Email" style="margin-left: 20px;"><br>
+        </a>
+        
+        <a href="/stripe">
+            <img class="uk-margin-small-top" src="./images/button-floating-sus-tine.png" width="109" height="64" alt="Sustine-ne!">
+        </a>
+</div>
+<footer>
+    <div class="footer-top uk-grid uk-grid-collapse uk-margin-small-top uk-margin-small-bottom menu-footer uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <ul>
+                <li><a href="#">Termeni și condiții</a></li>
+                <li><a href="#">Politică GDPR</a></li>
+                <li><a href="#">Sponsori</a></li>
+                <li><a href="#">Parteneri Media</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom uk-text-center uk-text-small">
+        <p>"Proiectul este derulat de <strong>ARNIS</strong> și beneficiaza de o finanțare în valoare de ... Euro, prin programul Active Citizens Fund Romania, finanțat de Islanda, Liechtenstein și Norvegia prin Granturile SEE 2014-2021. Conținutul acestui website nu reprezintă în mod necesar poziția oficială a Granturilor SEE și Norvegiene 2014-2021; pentru mai multe informații accesați <a href="https://eeagrants.org/">eeagrants.org</a>. Informații despre Active Citizens Fund Romania sunt disponibile la <a href="https://activecitizensfund.ro/">activecitizensfund.ro</a>"</p>
+        <p class="uk-text-bold uk-margin-small-top">Toare drepturile rezervate ARNIS - 2022 </p>
+    </div>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sus-tin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit-icons.min.js"></script>
+</head>
+<body class="uk-container">
+    <header class="uk-header uk-grid uk-margin-small-top">
+        <div class="uk-width-1-4@s">
+            <a href="#" class="brand-logo">
+                <figure class="uk-margin-left uk-margin-remove-bottom"><img src="./images/logo-citizens-fund.png" width="226" height="80"
+                        alt="Active Citizens Fund"></figure>
+            </a>
+        </div>
+        <div class="uk-width-3-4@s">
+            <div class="uk-flex uk-flex-middle uk-flex-right">
+                <div class="uk-margin-large-right">
+                    <nav class="uk-navbar-container">
+                        <ul class="uk-navbar-nav uk-visible@m uk-navbar-right">
+                            <li><a href="#">Despre SUS-TIN</a></li>
+                            <li><a href="#">Despre ARNIS</a></li>
+                            <li><a href="#">Doneaza</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <a href="#my-id" uk-icon="icon:menu" class="uk-hidden@m" uk-toggle></a>
+                    </nav>
+                    <div id="my-id" uk-offcanvas="mode: slide">
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav">
+                                <li><a href="#">Despre SUS-TIN</a></li>
+                                <li><a href="#">Despre ARNIS</a></li>
+                                <li><a href="#">Doneaza</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-inline">
+                        <a class="uk-icon-button uk-margin-left uk-icon uk-search-icon" href="#" uk-search-icon=""
+                            aria-haspopup="true" aria-expanded="false"></a>
+                        <div uk-drop="mode: click">
+                            <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+                                <div class="uk-width-expand uk-first-column">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="Search" autofocus="">
+                                    </form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close uk-icon uk-drop-close" href="#" uk-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <a class="uk-button uk-button-primary" href="#">Cont utilizator</a>
+                </div>    
+            </div>
+        </div>   
+        </div>
+    </header>
+    <section class="uk-section-1">
+        <div class="uk-grid-collapse" uk-grid>
+            <div class="uk-width-1-4@s main-left-section">
+                <figure>
+                    <a href="#">
+                        <img src="./images/logo-sus-tin.png" width="226" height="248" alt="SUS-TIN">
+                    </a>
+                </figure>
+                <div class="uk-clearfix uk-text-center uk-text-small uk-grid-small uk-grid" uk-grid="">
+                    <div class="uk-width-1-2 uk-float-left uk-first-column">
+                        <h5>Proiect derulat de:</h5>                            
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-arnis.png" alt="ARNIS" width="105" height="90">
+                        <div class="grid">
+                            <a href="https://www.facebook.com/asociatiaARNIS/" class="uk-icon-button sus-tin-icon-facebook uk-icon" uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button sus-tin-icon-web uk-icon" uk-icon="world"></a>
+                        </div>
+                        
+                    </div>
+                    <div class="uk-width-1-2 uk-float-right">
+                        <h5>Cu sprijinul:</h5>                            
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-SCJU-Cluj.png" alt="Maternitati partenere" width="128" height="87">
+                    </div>
+                </div>
+                
+            
+            </div>
+            <div class="uk-width-3-4@s">
+                <div class="uk-width-expand@m uk-flex uk-flex-center uk-flex-middle">
+
+                    <form class="uk-form-stacked login-form" action="" method="POST" novalidate="novalidate">
+                    <input id="csrf_token" name="csrf_token" type="hidden" value="IjVhNWUzOGJhN2VjY2YyNmQ2ZDA2MjExYjY3Y2I3Nzc2NjM2ZTQyODUi.Y5R3hg.sJjaAwyvxGk8QtjetzQzNfWKqbs">
+                    
+                    <fieldset class="uk-fieldset">
+                        
+                        <p class="uk-heading-line uk-text-center"><span>Conectare cont</span></p>
+                        
+                        <div class="uk-margin-small">
+                            <label class="uk-form-label uk-text-left" for="form-stacked-text">Email</label>
+                            <input class="uk-input uk-width-medium" id="email" maxlength="64" minlength="1" name="email" placeholder="..." required="" type="text" value="">
+                            
+                        </div>
+                         
+                        <div class="uk-margin-small">
+                            <label class="uk-form-label uk-text-left" for="form-stacked-text">Parola</label>
+                            <div class="uk-inline">
+                                <a class="uk-form-icon uk-form-icon-flip" href="#" onclick="showPasswordButton()"><i class="fa-solid fa-eye-slash"></i></a>
+                                <input class="uk-input uk-width-medium" id="password" name="password" placeholder="..." required="" type="password" value="" aria-label="Clickable icon" autocomplete="off">
+                            </div>
+                            
+                        </div>
+            
+                        <div class="uk-margin-small">
+                            <label><input class="uk-checkbox" id="remember_me" name="remember_me" type="checkbox" value="y"> Reține parola</label>
+                        </div>
+            
+                        <div class="uk-margin-small">
+                            
+            <script src="https://www.google.com/recaptcha/api.js?hl=ro" async="" defer=""></script>
+            <div class="g-recaptcha" data-sitekey="6Le1LxMjAAAAAAc2yKtgrrEowaxdfWj0NLpwW5CC"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le1LxMjAAAAAAc2yKtgrrEowaxdfWj0NLpwW5CC&amp;co=aHR0cHM6Ly9zdXMtdGluLmFybmlzLm9uZzo0NDM.&amp;hl=ro&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;size=normal&amp;cb=1gnbtf5ef1do" width="304" height="78" role="presentation" name="a-tn8kk49h2gct" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+            
+            
+                            
+                        </div>
+                      
+                        <div class="uk-margin-small">
+                            <input class="uk-button uk-button-default uk-width-medium uk-button-danger" id="submit" name="submit" type="submit" value="Conectare cont existent">
+                        </div>
+                        
+                        <div class="uk-margin-small">
+                            <a class="uk-button uk-button-default uk-width-medium uk-alert-danger" href="/auth/reset">Mi-am uitat parola</a>
+                        </div>
+            
+                        <div class="uk-margin-small">
+                            <a class="uk-button uk-button-default uk-width-medium" href="/auth/register">Înregistrare cont nou</a>
+                        </div>
+                    
+                    </fieldset>
+                    </form>
+            
+                </div>
+            
+            </div>
+            
+        </div>
+    </section>
+    <div class="right-widget">
+        <a href="tel:0745639898">
+            <img src="./images/button-floating-phone.png" width="48" height="48" alt="Telefon" style="margin-left: 20px;"><br>
+        </a>
+
+        <a href="mailto:contact@arnis.ong">
+            <img class="uk-margin-small-top" src="./images/button-floating-email.png" width="48" height="48" alt="Email" style="margin-left: 20px;"><br>
+        </a>
+        
+        <a href="/stripe">
+            <img class="uk-margin-small-top" src="./images/button-floating-sus-tine.png" width="109" height="64" alt="Sustine-ne!">
+        </a>
+</div>
+<footer>
+    <div class="footer-top uk-grid uk-grid-collapse uk-margin-small-top uk-margin-small-bottom menu-footer uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <ul>
+                <li><a href="#">Termeni și condiții</a></li>
+                <li><a href="#">Politică GDPR</a></li>
+                <li><a href="#">Sponsori</a></li>
+                <li><a href="#">Parteneri Media</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom uk-text-center uk-text-small">
+        <p>"Proiectul este derulat de <strong>ARNIS</strong> și beneficiaza de o finanțare în valoare de ... Euro, prin programul Active Citizens Fund Romania, finanțat de Islanda, Liechtenstein și Norvegia prin Granturile SEE 2014-2021. Conținutul acestui website nu reprezintă în mod necesar poziția oficială a Granturilor SEE și Norvegiene 2014-2021; pentru mai multe informații accesați <a href="https://eeagrants.org/">eeagrants.org</a>. Informații despre Active Citizens Fund Romania sunt disponibile la <a href="https://activecitizensfund.ro/">activecitizensfund.ro</a>"</p>
+        <p class="uk-text-bold uk-margin-small-top">Toare drepturile rezervate ARNIS - 2022 </p>
+    </div>
+</footer>
+    
+</body>
+</html>

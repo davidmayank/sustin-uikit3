@@ -1,0 +1,65 @@
+*{padding: 0;margin: 0;box-sizing: border-box;outline:none;}
+html,h1, h2, h3, h4, h5, h6 {font-family: Arial, sans-serif;}
+.uk-header .uk-navbar-nav{gap:20px;}
+.uk-header .uk-navbar-nav li a{color:#891f64;font:700 normal 16px/20px Arial,sans-serif;text-transform:capitalize;min-height: 24px;}
+.uk-header .uk-navbar-nav li a:hover{text-decoration: underline;}
+.uk-header .uk-navbar-container:not(.uk-navbar-transparent) {background: transparent;}
+.uk-header .uk-icon-button{background:#27809f;color:#fff}
+.uk-header .uk-drop.uk-open{width:210px;padding:10px;border:1px solid #a7a7a7;background:#fff}
+.uk-header .uk-button{border-radius:19px;text-transform:none;font-size:17px}
+.uk-header .uk-button-primary{background-color:#27809f;padding:0 30px;font:15px/40px Arial,sans-serif}
+.main-left-section{max-width:270px}
+.main-left-section figure{margin:82px 0 73px 20px}
+.sus-tin-icon-facebook,.sus-tin-icon-web{background-color:#891f64;color: #fff;}
+.ilustratie-ursi-image {
+  padding-bottom: 30px;
+}
+.text-main-ilustration{color:#47b1c7;font:19px/22px 'Nunito Sans Black';top:20%;left:25%}
+.uk-card-arnis{border:1px solid #891f64;border-radius:19px;color:#27809f;padding:18px 14px;background:#fff;height: 100%;}
+.uk-card-arnis:hover{background-color:#fff;box-shadow:0 14px 25px rgb(0 0 0 / 16%)}
+.right-widget{position:fixed;right:0;top:200px}
+
+.footer-top{background-color:#8a2065;padding:15px 0}
+.footer-top ul{list-style:none;padding:0}
+.footer-top ul li{display:inline-block;margin:0 10px}
+.footer-top ul li a,.footer-top ul li a:link{font:700 normal 16px/24px Arial,sans-serif;color:#fff}
+.footer-bottom a,.footer-bottom p{color:#8a2065}
+
+/*---- register page ----*/
+.register-form .uk-button{border-radius:19px;text-transform:none;font-size:15px}
+/*---- login page ----*/ 
+.login-form .uk-button{border-radius:19px;text-transform:none;font-size:15px}
+/*---- mobile responsive css ----*/
+@media screen and (max-width: 992px) {
+  .uk-navbar-nav{gap:8px;}
+  .sus-tin-icon-facebook, .sus-tin-icon-web {width: 20px;height: 20px;}
+  .uk-header .uk-margin-large-right{margin-right: 0px!important;}
+  .uk-header .uk-navbar-nav li a{font:700 normal 14px/30px Arial,sans-serif}
+  .uk-header .uk-icon-button {width: 30px;height: 30px;}
+  .uk-header .uk-button-primary {padding: 0 15px;font: 14px/30px Arial,sans-serif;}
+}
+
+@media screen and (max-width: 767px) {
+  .main-left-section{max-width:270px;margin:auto}
+  .text-main-ilustration{font:14px/22px 'Nunito Sans Black';top:15%;left:25%}
+
+}
+@media screen and (max-width: 479px) {
+
+}
+
+/*---- fonts css ----*/
+@font-face{font-family:'Nunito Sans Regular';font-style:normal;font-weight:400;src:local('Nunito Sans Regular'),url(../fonts/NunitoSans-Regular.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Italic';font-style:normal;font-weight:400;src:local('Nunito Sans Italic'),url(../fonts/NunitoSans-Italic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans ExtraLight';font-style:normal;font-weight:400;src:local('Nunito Sans ExtraLight'),url(../fonts/NunitoSans-ExtraLight.woff) format('woff')}
+@font-face{font-family:'Nunito Sans ExtraLight Italic';font-style:normal;font-weight:400;src:local('Nunito Sans ExtraLight Italic'),url(../fonts/NunitoSans-ExtraLightItalic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Light';font-style:normal;font-weight:400;src:local('Nunito Sans Light'),url(../fonts/NunitoSans-Light.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Light Italic';font-style:normal;font-weight:400;src:local('Nunito Sans Light Italic'),url(../fonts/NunitoSans-LightItalic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans SemiBold';font-style:normal;font-weight:400;src:local('Nunito Sans SemiBold'),url(../fonts/NunitoSans-SemiBold.woff) format('woff')}
+@font-face{font-family:'Nunito Sans SemiBold Italic';font-style:normal;font-weight:400;src:local('Nunito Sans SemiBold Italic'),url(../fonts/NunitoSans-SemiBoldItalic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Bold';font-style:normal;font-weight:400;src:local('Nunito Sans Bold'),url(../fonts/NunitoSans-Bold.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Bold Italic';font-style:normal;font-weight:400;src:local('Nunito Sans Bold Italic'),url(../fonts/NunitoSans-BoldItalic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans ExtraBold';font-style:normal;font-weight:400;src:local('Nunito Sans ExtraBold'),url(../fonts/NunitoSans-ExtraBold.woff) format('woff')}
+@font-face{font-family:'Nunito Sans ExtraBold Italic';font-style:normal;font-weight:400;src:local('Nunito Sans ExtraBold Italic'),url(../fonts/NunitoSans-ExtraBoldItalic.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Black';font-style:normal;font-weight:400;src:local('Nunito Sans Black'),url(../fonts/NunitoSans-Black.woff) format('woff')}
+@font-face{font-family:'Nunito Sans Black Italic';font-style:normal;font-weight:400;src:local('Nunito Sans #000 Italic'),url(../fonts/NunitoSans-BlackItalic.woff) format('woff')}

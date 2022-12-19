@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sus-tin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit-icons.min.js"></script>
+</head>
+<body class="uk-container">
+    <header class="uk-header uk-grid uk-margin-small-top">
+        <div class="uk-width-1-4@s">
+            <a href="#" class="brand-logo">
+                <figure class="uk-margin-left uk-margin-remove-bottom"><img src="./images/logo-citizens-fund.png" width="226" height="80"
+                        alt="Active Citizens Fund"></figure>
+            </a>
+        </div>
+        <div class="uk-width-3-4@s">
+            <div class="uk-flex uk-flex-middle uk-flex-right">
+                <div class="uk-margin-large-right">
+                    <nav class="uk-navbar-container">
+                        <ul class="uk-navbar-nav uk-visible@m uk-navbar-right">
+                            <li><a href="#">Despre SUS-TIN</a></li>
+                            <li><a href="#">Despre ARNIS</a></li>
+                            <li><a href="#">Doneaza</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <a href="#my-id" uk-icon="icon:menu" class="uk-hidden@m" uk-toggle></a>
+                    </nav>
+                    <div id="my-id" uk-offcanvas="mode: slide">
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav">
+                                <li><a href="#">Despre SUS-TIN</a></li>
+                                <li><a href="#">Despre ARNIS</a></li>
+                                <li><a href="#">Doneaza</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-inline">
+                        <a class="uk-icon-button uk-margin-left uk-icon uk-search-icon" href="#" uk-search-icon=""
+                            aria-haspopup="true" aria-expanded="false"></a>
+                        <div uk-drop="mode: click">
+                            <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+                                <div class="uk-width-expand uk-first-column">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="Search" autofocus="">
+                                    </form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close uk-icon uk-drop-close" href="#" uk-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <a class="uk-button uk-button-primary" href="#">Cont utilizator</a>
+                </div>    
+            </div>
+        </div>   
+        </div>
+    </header>
+    <section class="uk-section-1">
+        <div class="uk-grid-collapse" uk-grid>
+            <div class="uk-width-1-4@s main-left-section">
+                <figure>
+                    <a href="#">
+                        <img src="./images/logo-sus-tin.png" width="226" height="248" alt="SUS-TIN">
+                    </a>
+                </figure>
+                <div class="uk-clearfix uk-text-center uk-text-small uk-grid-small uk-grid" uk-grid="">
+                    <div class="uk-width-1-2 uk-float-left uk-first-column">
+                        Proiect derulat de:                          
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-arnis.png" alt="ARNIS" width="105" height="90">
+                        <div class="grid">
+                            <a href="https://www.facebook.com/asociatiaARNIS/" class="uk-icon-button sus-tin-icon-facebook uk-icon" uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button sus-tin-icon-web uk-icon" uk-icon="world"></a>
+                        </div>
+                        
+                    </div>
+                    <div class="uk-width-1-2 uk-float-right">
+                        Cu sprijinul:                           
+                        <img class="uk-margin-small-bottom uk-margin-small-top" src="./images/logo-SCJU-Cluj.png" alt="Maternitati partenere" width="128" height="87">
+                    </div>
+                </div>
+                
+            
+            </div>
+            <div class="uk-width-3-4@s">
+                <div class="uk-position-relative uk-align-center" style="max-width: 590px;">
+                    <img src="./images/ilustratie-ursi.png" width="590" height="522" alt="ilustratie ursi" class="ilustratie-ursi-image">
+                    <div class="uk-position-absolute uk-text-uppercase uk-text-center text-main-ilustration">
+                        Platformă online de,<br>comunicare, informare și<br>susținere in maternitate
+                    </div>
+                    <div class="uk-position-bottom some-widget">
+                        <div class="uk-grid-small uk-text-center uk-flex-center uk-text-bold uk-grid" uk-grid="">
+                            <div class="uk-width-1-3">
+                                <div class="uk-card-arnis uk-card-default  uk-card-small uk-card-body">
+                                    <img src="./images/logo-small-beneficii-parinti.png" alt=""><br>Beneficii părinți
+                                </div>
+                            </div>
+        
+                            <div class="uk-width-1-3">
+                                <div class="uk-card-arnis uk-card-default  uk-card-small uk-card-body">
+                                    <img src="./images/logo-small-rezultate-sus-tin.png" alt="Rezultate SUS-TIN"><br>Rezultate SUS-TIN
+                                </div>
+                            </div>
+        
+                            <div class="uk-width-1-3">
+                                <div class="uk-card-arnis uk-card-default  uk-card-small uk-card-body">
+                                    <img src="./images/logo-small-faq.png" alt="FQA"><br>FQA
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="right-widget">
+        <a href="tel:0745639898">
+            <img src="./images/button-floating-phone.png" width="48" height="48" alt="Telefon" style="margin-left: 20px;"><br>
+        </a>
+
+        <a href="mailto:contact@arnis.ong">
+            <img class="uk-margin-small-top" src="./images/button-floating-email.png" width="48" height="48" alt="Email" style="margin-left: 20px;"><br>
+        </a>
+        
+        <a href="/stripe">
+            <img class="uk-margin-small-top" src="./images/button-floating-sus-tine.png" width="109" height="64" alt="Sustine-ne!">
+        </a>
+</div>
+<footer>
+    <div class="footer-top uk-grid uk-grid-collapse uk-margin-small-top uk-margin-small-bottom menu-footer uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <ul>
+                <li><a href="#">Termeni și condiții</a></li>
+                <li><a href="#">Politică GDPR</a></li>
+                <li><a href="#">Sponsori</a></li>
+                <li><a href="#">Parteneri Media</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom uk-text-center uk-text-small">
+        <p>"Proiectul este derulat de <strong>ARNIS</strong> și beneficiaza de o finanțare în valoare de ... Euro, prin programul Active Citizens Fund Romania, finanțat de Islanda, Liechtenstein și Norvegia prin Granturile SEE 2014-2021. Conținutul acestui website nu reprezintă în mod necesar poziția oficială a Granturilor SEE și Norvegiene 2014-2021; pentru mai multe informații accesați <a href="https://eeagrants.org/">eeagrants.org</a>. Informații despre Active Citizens Fund Romania sunt disponibile la <a href="https://activecitizensfund.ro/">activecitizensfund.ro</a>"</p>
+        <p class="uk-text-bold uk-margin-small-top">Toare drepturile rezervate ARNIS - 2022 </p>
+    </div>
+</footer>
+    
+</body>
+</html>
