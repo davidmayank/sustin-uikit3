@@ -94,50 +94,92 @@
             </div>
             <div class="uk-width-3-4@s">
                 
-                <ul uk-accordion="collapsible: true">
+                <ul uk-accordion="collapsible: false">
                     <li>
-                        <a class="uk-accordion-title" href="#" onclick="move()">Video 1</a>
-                        <div class="uk-accordion-content">
-                            
+                        <a class="uk-accordion-title uk-disabled" href="#" onclick="move()">Video 1<button class="uk-button uk-button-secondary uk-float-right" id="Button1">Next Video</button></a>
+                        
+                        <div class="uk-accordion-content">                            
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore magna aliqua.</p>
-                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/785634454?h=bced53bdcd" width="640" height="268" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                            <iframe id="video1" src="https://player.vimeo.com/video/782438322?h=f0ba1212d3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="268" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+                            <script type="text/javascript">                                
+                                var iframe =  document.getElementById('video1');
+                                var player = new Vimeo.Player(iframe);                                
+                                player.on('ended', function() {
+                                $("#Button1").css("opacity", "1");
+                                $(".uk-disabled").css("pointer-events", "auto");                                                         
+                                });                                
+                            </script>                                
                         </div>
                     </li>
                     <li>
-                        <a class="uk-accordion-title" href="#" onclick="move1()">Video 2</a>
+                        <a class="uk-accordion-title uk-disabled" href="#" onclick="move1()">Video 2<button class="uk-button uk-button-secondary uk-float-right" id="Button2">Next Video</button></a>
                         <div class="uk-accordion-content">
                             
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor reprehenderit.</p>
-                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/771088289?h=4ec6b326d5" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                        
+                            <iframe id="video2" src="https://player.vimeo.com/video/771088289?h=4ec6b326d5" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <script type="text/javascript">                                
+                                var iframe =  document.getElementById('video2');
+                                var player = new Vimeo.Player(iframe);                                
+                                player.on('ended', function() {
+                                $("#Button2").css("opacity", "1");
+                                $(".uk-disabled").css("pointer-events", "auto");                                                         
+                                });                                
+                            </script>                       
                         </div>
                     </li>
                     <li>
-                        <a class="uk-accordion-title" href="#" onclick="move2()">Video 3</a>
+                        <a class="uk-accordion-title uk-disabled" href="#" onclick="move2()">Video 3<button class="uk-button uk-button-secondary uk-float-right" id="Button3">Next Video</button></a>
                         <div class="uk-accordion-content">
                             
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat proident.</p>
-                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                            <iframe id="video3" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <script type="text/javascript">                                
+                                var iframe =  document.getElementById('video3');
+                                var player = new Vimeo.Player(iframe);                                
+                                player.on('ended', function() {
+                                $("#Button3").css("opacity", "1");
+                                $(".uk-disabled").css("pointer-events", "auto");                                                         
+                                });                                
+                            </script>                                
                         </div>
                     </li>
                     <li>
-                        <a class="uk-accordion-title" href="#" onclick="move3()">Video 4</a>
+                        <a class="uk-accordion-title uk-disabled" href="#" onclick="move3()">Video 4<button class="uk-button uk-button-secondary uk-float-right" id="Button4">Next Video</button></a>
                         <div class="uk-accordion-content">
                             
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat proident.</p>
-                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                            <iframe id="video4" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <script type="text/javascript">                                
+                                var iframe =  document.getElementById('video4');
+                                var player = new Vimeo.Player(iframe);                                
+                                player.on('ended', function() {
+                                $("#Button4").css("opacity", "1");
+                                $(".uk-disabled").css("pointer-events", "auto");                                                         
+                                });                                
+                            </script>                                 
                         </div>
                     </li>
                     <li>
-                        <a class="uk-accordion-title" href="#" onclick="move4()">Video 5</a>
+                        <a class="uk-accordion-title uk-disabled" href="#" onclick="move4()">Video 5<button class="uk-button uk-button-secondary uk-float-right" id="Button5">Next Video</button></a>
                         <div class="uk-accordion-content">
                             
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat proident.</p>
-                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                            <iframe id="video5"src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <script type="text/javascript">                                
+                                var iframe = document.getElementById('video5');
+                                var player = new Vimeo.Player(iframe);                                
+                                player.on('ended', function() {
+                                $("#Button5").css("opacity", "1");
+                                $(".uk-disabled").css("pointer-events", "auto");                                                         
+                                });                                
+                            </script>                                
                         </div>
                     </li>
                 </ul>
@@ -173,7 +215,7 @@
         <p class="uk-text-bold uk-margin-small-top">Toare drepturile rezervate ARNIS - 2022 </p>
     </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 
@@ -260,7 +302,9 @@
 }
 
 </script>
-<!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
+
+
+
 
 </body>
 </html>
