@@ -122,6 +122,24 @@
                             <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
                         </div>
                     </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#" onclick="move3()">Video 4</a>
+                        <div class="uk-accordion-content">
+                            
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat proident.</p>
+                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#" onclick="move4()">Video 5</a>
+                        <div class="uk-accordion-content">
+                            
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat proident.</p>
+                            <iframe uk-video="autoplay: inview" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>                                
+                        </div>
+                    </li>
                 </ul>
             </div>            
         </div>
@@ -164,7 +182,7 @@
       var width = 1;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 33) {
+        if (width >= 20) {
           clearInterval(id);
         } else {
           width++;
@@ -181,7 +199,7 @@
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 66) {
+    if (width >= 40) {
       clearInterval(id);
     } else {
       width++;
@@ -194,6 +212,40 @@
 <script type="text/javascript">
 
     function move2() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 60) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript">
+
+    function move3() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript">
+
+    function move4() {
   var elem = document.getElementById("myBar");
   var width = 1;
   var id = setInterval(frame, 10);
