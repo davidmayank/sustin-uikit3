@@ -1,23 +1,19 @@
 *{padding: 0;margin: 0;box-sizing: border-box;outline:none;}
 html,h1, h2, h3, h4, h5, h6 {font-family: Arial, sans-serif;}
-.uk-header .uk-navbar-nav{gap:20px;}
-.uk-header .uk-navbar-nav li a{color:#891f64;font:700 normal 16px/20px Arial,sans-serif;text-transform:capitalize;min-height: 24px;}
+.uk-header .uk-navbar-nav li a{color:#891f64;font:700 normal 16px/40px Arial,sans-serif;text-transform:capitalize}
 .uk-header .uk-navbar-nav li a:hover{text-decoration: underline;}
 .uk-header .uk-navbar-container:not(.uk-navbar-transparent) {background: transparent;}
 .uk-header .uk-icon-button{background:#27809f;color:#fff}
 .uk-header .uk-drop.uk-open{width:210px;padding:10px;border:1px solid #a7a7a7;background:#fff}
 .uk-header .uk-button{border-radius:19px;text-transform:none;font-size:17px}
-.uk-header .uk-button-primary{background-color:#27809f;padding:0 30px;font:15px/40px Arial,sans-serif}
-.main-left-section{max-width:270px}
-.main-left-section figure{margin:82px 0 73px 20px}
+.uk-header .uk-button-primary{background-color:#27809f;padding:0 30px;font:16px/40px Arial,sans-serif}
 .sus-tin-icon-facebook,.sus-tin-icon-web{background-color:#891f64;color: #fff;}
-.ilustratie-ursi-image {
-  padding-bottom: 30px;
-}
-.text-main-ilustration{color:#47b1c7;font:19px/22px 'Nunito Sans Black';top:20%;left:25%}
+.text-main-ilustration{color:#47b1c7;font:19px/22px 'Nunito Sans Black';top:15%;left:25%}
 .uk-card-arnis{border:1px solid #891f64;border-radius:19px;color:#27809f;padding:18px 14px;background:#fff;height: 100%;}
 .uk-card-arnis:hover{background-color:#fff;box-shadow:0 14px 25px rgb(0 0 0 / 16%)}
 .right-widget{position:fixed;right:0;top:200px}
+
+.uk-accordion-title:hover::before{content: "Next Video";background: none;width: auto;transition: 0.3s all ;}
 
 .footer-top{background-color:#8a2065;padding:15px 0}
 .footer-top ul{list-style:none;padding:0}
@@ -40,7 +36,7 @@ html,h1, h2, h3, h4, h5, h6 {font-family: Arial, sans-serif;}
 }
 
 @media screen and (max-width: 767px) {
-  .main-left-section{max-width:270px;margin:auto}
+  
   .text-main-ilustration{font:14px/22px 'Nunito Sans Black';top:15%;left:25%}
 
 }
