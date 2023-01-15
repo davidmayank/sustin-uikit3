@@ -7,9 +7,100 @@
     <title>sus-tin</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="./css/style.css">
-<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+        function move() {
+      var elem = document.getElementById("myBar");
+      var width = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 20) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+        }
+      }
+    }
+    
+</script>
+<script type="text/javascript">
+
+    function move1() {
+  var elem = document.getElementById("myBar");
+  var width = 21;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 40) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript">
+
+    function move2() {
+  var elem = document.getElementById("myBar");
+  var width = 41;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 60) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript">
+
+    function move3() {
+  var elem = document.getElementById("myBar");
+  var width = 61;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript">
+
+    function move4() {
+        var elem = document.getElementById("myBar");
+        var width = 81;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+
+</script>
+
+   
+ 
 </head>
 <body class="uk-container">
     <header class="uk-header uk-grid uk-margin-small-top">
@@ -101,21 +192,9 @@
                         <div class="uk-accordion-content">                            
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore magna aliqua.</p>
-                            
-                                <iframe id="video1"
-                                    src="https://player.vimeo.com/video/782438322?h=f0ba1212d3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    width="640" height="268" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            
-                                <script src="https://player.vimeo.com/api/player.js"></script>
-                                <script type="text/javascript">
-                                    var iframe1 = document.getElementById('video1');
-                                    var player1 = new Vimeo.Player(iframe1);
-                                    player1.on('ended', function () {
-                                        $(".uk-button1").css("opacity", "1");
-                                        $(".uk-disabled.uk-dis1").css("pointer-events", "auto");
-                                        $(".uk-disabled.uk-dis2").css("pointer-events", "auto");
-                                    });                                
-                                </script>
+                                <div style="padding:72.16% 0 0 0;position:relative;"><iframe id="video1" src="https://player.vimeo.com/video/785074335?h=7f6fc36d13&autoplay=1&title=0&byline=0&portrait=0&badge=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                                
+                                
                             
                         </div>
                     </li>
@@ -125,18 +204,10 @@
                             
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor reprehenderit.</p>
+                                <div style="padding:72.16% 0 0 0;position:relative;"><iframe id="video2" src="https://player.vimeo.com/video/785074335?h=7f6fc36d13&autoplay=1&title=0&byline=0&portrait=0&badge=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>                                  
+                                                        
+                                
                             
-                                <iframe id="video2" src="https://player.vimeo.com/video/771088289?h=4ec6b326d5" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            <script src="https://player.vimeo.com/api/player.js"></script>
-                            <script type="text/javascript">                                
-                                var iframe2 =  document.getElementById('video2');
-                                var player2 = new Vimeo.Player(iframe2);                                
-                                player2.on('ended', function() {
-                                $(".uk-button2").css("opacity", "1");
-                                $(".uk-disabled.uk-dis2").css("pointer-events", "auto");
-                                $(".uk-disabled.uk-dis3").css("pointer-events", "auto");                                                         
-                                });                                
-                            </script>
                                                    
                         </div>
                     </li>
@@ -146,58 +217,12 @@
                             
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat proident.</p>
-                                    <iframe id="video3" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            <script src="https://player.vimeo.com/api/player.js"></script>
-                            <script type="text/javascript">                                
-                                var iframe3 =  document.getElementById('video3');
-                                var player3 = new Vimeo.Player(iframe3);                                
-                                player3.on('ended', function() {
-                                $(".uk-button3").css("opacity", "1");
-                                $(".uk-disabled.uk-dis3").css("pointer-events", "auto");
-                                $(".uk-disabled.uk-dis4").css("pointer-events", "auto");                                                         
-                                });                                
-                            </script>
+                                <div style="padding:72.16% 0 0 0;position:relative;"><iframe id="video3" src="https://player.vimeo.com/video/785074335?h=7f6fc36d13&autoplay=1&title=0&byline=0&portrait=0&badge=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            
                             
                         </div>
                     </li>
-                    <li>
-                        <a class="uk-accordion-title uk-disabled uk-dis4" id="Button4" href="#" onclick="move3()">Video 4<button class="uk-button uk-button-secondary uk-float-right uk-button4">Next Video</button></a>
-                        <div class="uk-accordion-content">
-                            
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat proident.</p>
-                                <iframe id="video4" src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            <script src="https://player.vimeo.com/api/player.js"></script>
-                            <script type="text/javascript">                                
-                                var iframe4 =  document.getElementById('video4');
-                                var player4 = new Vimeo.Player(iframe4);                                
-                                player4.on('ended', function() {
-                                $(".uk-button4").css("opacity", "1");
-                                $(".uk-disabled.uk-dis4").css("pointer-events", "auto");                                                         
-                                $(".uk-disabled.uk-dis5").css("pointer-events", "auto");
-                                });                                
-                            </script> 
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title uk-disabled uk-dis5" id="Button5" href="#" onclick="move4()">Video 5<button class="uk-button uk-button-secondary uk-float-right uk-button5">Next Video</button></a>
-                        <div class="uk-accordion-content">
-                            
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat proident.</p>
-                            <iframe id="video5"src="https://player.vimeo.com/video/249752354?h=0d501e3732&color=a7ef00" width="640" height="360" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            <script src="https://player.vimeo.com/api/player.js"></script>
-                            <script type="text/javascript">                                
-                                var iframe5 = document.getElementById('video5');
-                                var player5 = new Vimeo.Player(iframe5);                                
-                                player5.on('ended', function() {
-                                $(".uk-button5").css("opacity", "1");
-                                $(".uk-disabled.uk-dis5").css("pointer-events", "auto");                                                         
-                                });                                
-                            </script>
-                                
-                        </div>
-                    </li>
+
                 </ul>
             </div>            
         </div>
@@ -231,96 +256,32 @@
         <p class="uk-text-bold uk-margin-small-top">Toare drepturile rezervate ARNIS - 2022 </p>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    $(window).on("load", function () {
+        var iframe1 = document.getElementById("video1");
+        var player1 = new Vimeo.Player(iframe1);
+        player1.on('ended', function () {
+            alert("Video 1st is ended");
+            $(".uk-button.uk-button1").css("opacity", "1");
+            $(".uk-disabled.uk-dis2").css("pointer-events", "auto");
+        });
 
-<script type="text/javascript">
+        var iframe2 = document.getElementById("video2");
+        var player2 = new Vimeo.Player(iframe2);
+        player2.on('ended', function () {
+            alert("Video 1st is ended");
+            $(".uk-button.uk-button1").css("opacity", "1");
+            $(".uk-disabled.uk-dis2").css("pointer-events", "auto");
+        });
 
-        function move() {
-      var elem = document.getElementById("myBar");
-      var width = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (width >= 20) {
-          clearInterval(id);
-        } else {
-          width++;
-          elem.style.width = width + '%';
-        }
-      }
-    }
-    
+        var iframe3 = document.getElementById("video3");
+        var player3 = new Vimeo.Player(iframe3);
+        player3.on('ended', function () {
+            $(".uk-button3").css("opacity", "1");
+        }); 
+
+    });
 </script>
-<script type="text/javascript">
-
-    function move1() {
-  var elem = document.getElementById("myBar");
-  var width = 21;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 40) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-
-</script>
-<script type="text/javascript">
-
-    function move2() {
-  var elem = document.getElementById("myBar");
-  var width = 41;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 60) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-
-</script>
-<script type="text/javascript">
-
-    function move3() {
-  var elem = document.getElementById("myBar");
-  var width = 61;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 80) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-
-</script>
-<script type="text/javascript">
-
-    function move4() {
-  var elem = document.getElementById("myBar");
-  var width = 81;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-
-</script>
-
-
-
-
 </body>
 </html>
